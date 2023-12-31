@@ -1,0 +1,59 @@
+.Video2 {}
+
+/* styles/VideoPlayer.module.css */
+.videoContainer {
+    position: relative;
+    width: 100vw;
+    height: 100vh; /* 16:9 aspect ratio */
+    /* max-height: 100vh; */
+    overflow: hidden;
+
+  }
+
+  .videoContainer video {
+
+    max-width: unset;
+
+
+  }
+  
+  .video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh; /* 16:9 aspect ratio */
+    max-height: 100vh;
+    object-fit: contain;
+  }
+
+  .video90{
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) rotate(90deg) !important;
+    width: 100vh !important;
+    height: 100vw !important; /* 16:9 aspect ratio */
+    /* max-height: 100vh; */
+    object-fit: contain !important;
+  }
+
+
+  
+  .fullScreen {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .fullScreenButton {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
